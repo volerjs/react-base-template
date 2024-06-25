@@ -45,7 +45,7 @@ module.exports = merge(baseConfig, {
             filename: '[path][base].gz', // 文件命名
             algorithm: 'gzip', // 压缩算法
             test: /\.(js|css)$/,
-            threshold: 10 * 1024,
+            threshold: 10 * 1024, // 大于10kb才会被压缩
             minRatio: 0.8,
         })
     ],
